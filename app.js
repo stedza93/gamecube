@@ -50,6 +50,8 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
       ).textContent = roundScore;
     } else {
       //Next player
+      document.getElementById("score-" + activePlayer).textContent = "0";
+
       nextPlayer();
     }
   }
